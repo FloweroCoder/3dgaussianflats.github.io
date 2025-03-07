@@ -1,6 +1,6 @@
 # 3D Gaussian Flats
 
-| [Project Page](https://theialab.github.io/banf/) | [Paper](https://arxiv.org/abs/2404.13024) |
+| [Project Page](https://flowerocoder.github.io/3dgaussianflats.github.io/) | [Paper](https://arxiv.org/abs/2404.13024) |
 
 This is the official repository for the paper "3D Gaussian Flats" (ICCV 2025).
 

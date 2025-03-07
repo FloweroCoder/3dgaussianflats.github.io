@@ -50,28 +50,10 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">3D Gaussian Flats</h1>
-          <div class="is-size-5 publication-authors">
+          <div class="is-size-1 publication-authors">
             <span class="author-block">
-              <a href="https://mtaktash.github.io">Maria Taktasheva</a><sup>1</sup>,</span>
+              <font size="100px"><a href="https://flowerocoder.github.io/3dgaussianflats.github.io/">Anonymous ICCV submission</a></span></font>
             <span class="author-block">
-              <a href="https://alessandrofiorini.com">Alessandro Fiorini</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://lilygoli.github.io">Lily Goli</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://drebain.com">Daniel Rebain</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://taiya.github.io">Andrea Tagliasacchi</a><sup>1,2,4</sup>
-            </span>
-          </div>
-
-          <div class="is-size-4 publication-authors">
-            <span class="author-block"><sup>1</sup>Simon Fraser University,</span>
-            <span class="author-block"><sup>2</sup>University of Bologna,</span>
-            <span class="author-block"><sup>2</sup>University of Toronto</span>
-            <span class="author-block"><sup>3</sup>University of British Columbia</span>
-            <span class="author-block"><sup>4</sup>Google DeepMind</span>
           </div>
 
           <div class="column has-text-centered">
@@ -227,11 +209,13 @@
       </div>
     </div>
     <div class="content has-text-justified">
-      Largely due to their implicit nature, neural fields lack a direct mechanism for filtering, as Fourier analysis from discrete signal processing is not directly applicable to these representations. 
-      Effective filtering of neural fields is critical to enable level-of-detail processing in downstream applications, and support operations that involve sampling the field on regular grids (e.g. marching cubes). 
-      Existing methods that attempt to decompose neural fields in the frequency domain either resort to heuristics or require extensive modifications to the neural field architecture. 
-      We show that via a simple modification, one can obtain neural fields that are low-pass filtered, and in turn show how this can be exploited to obtain a frequency decomposition of the entire signal. 
-      We demonstrate the validity of our technique by investigating level-of-detail reconstruction, and showing how coarser representations can be computed effectively.
+      Recent advances in radiance fields and novel view synthesis enable realistic digital twins from photographs.
+      However, current methods struggle with flat, texture-less surfaces as photometric reconstruction is ill-conditioned, leading to wobbly and semi-transparent reconstruction in many scenes.
+      Classical methods for planar reconstruction avoid this issue but sacrifice visual quality.
+      We propose a hybrid 2D/3D representation that jointly optimizes planar (2D) and freeform (3D) Gaussians, modeling flat surfaces with 2D Gaussian splats while using a 3D Gaussian model for the rest of the scene.
+      This end-to-end approach dynamically detects and refines planar regions, improving both visual fidelity and geometric accuracy.
+      Our method achieves state-of-the-art depth estimation on ScanNet++ and ScanNetv2 while excelling at mesh extraction.
+      Unlike prior approaches, it generalizes across camera models without overfitting, demonstrating its effectiveness in producing accurate, high-quality reconstructions of indoor environments.
     </div>
 
     <hr>
@@ -246,7 +230,8 @@
 
 
     <div class="content has-text-justified">
-      Our core insight is that by regularly <b>sampling</b> a field, and then <b>interpolating</b> this field with a band-limited kernel can be seen as a <b>low-pass filtering operation</b>.
+      Our claim is that we can obtain state of the art rendering with a <b>simpler</b> and more <b>more geometrically accurate model</b> for better surface reconstruction. Our method doesn't involve necessary preprocessing of data, but leverages 3D Gaussian
+      Splatting MCMC relocation and surface masks to yield good quality meshes and rendering. 
     </div>
     <br>
 

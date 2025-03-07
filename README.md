@@ -1,4 +1,4 @@
-# BANF: Band-limited Neural Fields for Levels of Detail Reconstruction
+# 3D Gaussian Flats
 
 | [Project Page](https://theialab.github.io/banf/) | [Paper](https://arxiv.org/abs/2404.13024) |
 

@@ -210,12 +210,12 @@
     </div>
     <div class="content has-text-justified">
       Recent advances in radiance fields and novel view synthesis enable realistic digital twins from photographs.
-However, current methods struggle with flat, texture-less surfaces as photometric reconstruction is ill-conditioned, leading to wobbly and semi-transparent reconstruction in many scenes.
-Classical methods for planar reconstruction avoid this issue but sacrifice visual quality.
-We propose a hybrid 2D/3D representation that jointly optimizes planar (2D) and freeform (3D) Gaussians, modeling flat surfaces with 2D Gaussian splats while using a 3D Gaussian model for the rest of the scene.
-This end-to-end approach dynamically detects and refines planar regions, improving both visual fidelity and geometric accuracy.
-Our method achieves state-of-the-art depth estimation on ScanNet++ and ScanNetv2 while excelling at mesh extraction.
-Unlike prior approaches, it generalizes across camera models without overfitting, demonstrating its effectiveness in producing accurate, high-quality reconstructions of indoor environments.
+      However, current methods struggle with flat, texture-less surfaces as photometric reconstruction is ill-conditioned, leading to wobbly and semi-transparent reconstruction in many scenes.
+      Classical methods for planar reconstruction avoid this issue but sacrifice visual quality.
+      We propose a hybrid 2D/3D representation that jointly optimizes planar (2D) and freeform (3D) Gaussians, modeling flat surfaces with 2D Gaussian splats while using a 3D Gaussian model for the rest of the scene.
+      This end-to-end approach dynamically detects and refines planar regions, improving both visual fidelity and geometric accuracy.
+      Our method achieves state-of-the-art depth estimation on ScanNet++ and ScanNetv2 while excelling at mesh extraction.
+      Unlike prior approaches, it generalizes across camera models without overfitting, demonstrating its effectiveness in producing accurate, high-quality reconstructions of indoor environments.
     </div>
 
     <hr>
@@ -230,7 +230,8 @@ Unlike prior approaches, it generalizes across camera models without overfitting
 
 
     <div class="content has-text-justified">
-      Our core insight is that by regularly <b>sampling</b> a field, and then <b>interpolating</b> this field with a band-limited kernel can be seen as a <b>low-pass filtering operation</b>.
+      Our claim is that we can obtain state of the art rendering with a <b>simpler</b> and more <b>more geometrically accurate model</b> for better surface reconstruction. Our method doesn't involve necessary preprocessing of data, but leverages 3D Gaussian
+      Splatting MCMC relocation and surface masks to yield good quality meshes and rendering. 
     </div>
     <br>
 

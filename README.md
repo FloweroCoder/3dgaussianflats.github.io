@@ -2,7 +2,7 @@
 
 | [Project Page](https://theialab.github.io/banf/) | [Paper](https://arxiv.org/abs/2404.13024) |
 
-This is the official repository for the paper "Band-limited Neural Fields for Levels of Detail Reconstruction" (CVPR 2024).
+This is the official repository for the paper "3D Gaussian Flats" (ICCV 2025).
 
 We present our results in several settings. You can find more details in the respective directories.
 * [NeRFing](NeRFing/README.md)
